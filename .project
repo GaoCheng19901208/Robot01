@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>RF01</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/BuiltIn.py</name>
+			<type>1</type>
+			<location>C:/DB/AU/NGW/Python/Py/lib/site-packages/robot/libraries/BuiltIn.py</location>
+		</link>
+		<link>
+			<name>libspecs/DatabaseLibrary.py</name>
+			<type>1</type>
+			<location>C:/DB/AU/NGW/Python/Py/lib/site-packages/DatabaseLibrary/query.py</location>
+		</link>
+		<link>
+			<name>libspecs/XML.py</name>
+			<type>1</type>
+			<location>C:/DB/AU/NGW/Python/Py/lib/site-packages/robot/libraries/XML.py</location>
+		</link>
+	</linkedResources>
+</projectDescription>

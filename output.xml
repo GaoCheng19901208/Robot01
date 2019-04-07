@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.2 on win32)" generated="20190329 23:30:48.881" rpa="false">
+<suite id="s1" name="RF01" source="C:\DB\AU\NGW\Python\Automation\RobotFramework\Practice\RF01">
+<suite id="s1-s1" name="RF01" source="C:\DB\AU\NGW\Python\Automation\RobotFramework\Practice\RF01\RF01.robot">
+<test id="s1-s1-t1" name="Exampled">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>C:\\DB\\AU\\NGW\\Python\\Automation\\RobotFramework\\Practice\\RF01</arg>
+</arguments>
+<msg timestamp="20190329 23:30:49.238" level="INFO">C:\DB\AU\NGW\Python\Automation\RobotFramework\Practice\RF01</msg>
+<status status="PASS" starttime="20190329 23:30:49.225" endtime="20190329 23:30:49.238"></status>
+</kw>
+<kw name="Find Index">
+<arguments>
+<arg>baz</arg>
+<arg>@{LIST}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${0}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190329 23:30:49.253" level="INFO">${index} = 0</msg>
+<status status="PASS" starttime="20190329 23:30:49.245" endtime="20190329 23:30:49.253"></status>
+</kw>
+<kw name="${item} IN [ @{items} ]" type="for">
+<kw name="${item} = foo" type="foritem">
+<kw name="Return From Keyword If" library="BuiltIn">
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<arguments>
+<arg>'${item}' == '${element}'</arg>
+<arg>${index}</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:51.555" endtime="20190329 23:30:51.580"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${index + 1}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190329 23:30:51.583" level="INFO">${index} = 1</msg>
+<status status="PASS" starttime="20190329 23:30:51.581" endtime="20190329 23:30:51.583"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:51.553" endtime="20190329 23:30:51.584"></status>
+</kw>
+<kw name="${item} = baz" type="foritem">
+<kw name="Return From Keyword If" library="BuiltIn">
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<arguments>
+<arg>'${item}' == '${element}'</arg>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:51.586" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20190329 23:30:51.585" endtime="20190329 23:30:51.587"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:51.584" endtime="20190329 23:30:51.587"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:49.254" endtime="20190329 23:30:51.588"></status>
+</kw>
+<msg timestamp="20190329 23:30:51.588" level="INFO">${index} = 1</msg>
+<status status="PASS" starttime="20190329 23:30:49.239" endtime="20190329 23:30:51.589"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${index}</arg>
+<arg>${1}</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:51.589" endtime="20190329 23:30:52.047"></status>
+</kw>
+<kw name="Find Index">
+<arguments>
+<arg>non existing</arg>
+<arg>@{LIST}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${0}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.052" level="INFO">${index} = 0</msg>
+<status status="PASS" starttime="20190329 23:30:52.050" endtime="20190329 23:30:52.052"></status>
+</kw>
+<kw name="${item} IN [ @{items} ]" type="for">
+<kw name="${item} = foo" type="foritem">
+<kw name="Return From Keyword If" library="BuiltIn">
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<arguments>
+<arg>'${item}' == '${element}'</arg>
+<arg>${index}</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:52.547" endtime="20190329 23:30:52.554"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${index + 1}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.563" level="INFO">${index} = 1</msg>
+<status status="PASS" starttime="20190329 23:30:52.557" endtime="20190329 23:30:52.564"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:52.543" endtime="20190329 23:30:52.566"></status>
+</kw>
+<kw name="${item} = baz" type="foritem">
+<kw name="Return From Keyword If" library="BuiltIn">
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<arguments>
+<arg>'${item}' == '${element}'</arg>
+<arg>${index}</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:52.569" endtime="20190329 23:30:52.571"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${index + 1}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.575" level="INFO">${index} = 2</msg>
+<status status="PASS" starttime="20190329 23:30:52.573" endtime="20190329 23:30:52.575"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:52.567" endtime="20190329 23:30:52.576"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:52.053" endtime="20190329 23:30:52.577"></status>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>${-1}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.587" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20190329 23:30:52.578" endtime="20190329 23:30:52.587"></status>
+</kw>
+<msg timestamp="20190329 23:30:52.588" level="INFO">${index} = -1</msg>
+<status status="PASS" starttime="20190329 23:30:52.048" endtime="20190329 23:30:52.588"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${index}</arg>
+<arg>${-1}</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:52.589" endtime="20190329 23:30:52.590"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.598" level="INFO">${index} = -1</msg>
+<status status="PASS" starttime="20190329 23:30:52.591" endtime="20190329 23:30:52.599"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:49.224" endtime="20190329 23:30:52.600" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Show List">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${1}</arg>
+<arg>${2}</arg>
+<arg>${3}</arg>
+</arguments>
+<assign>
+<var>@{DemoLIST}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.610" level="INFO">@{DemoLIST} = [ 1 | 2 | 3 ]</msg>
+<status status="PASS" starttime="20190329 23:30:52.602" endtime="20190329 23:30:52.610"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{DemoLIST}[1]</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.613" level="INFO">2</msg>
+<status status="PASS" starttime="20190329 23:30:52.611" endtime="20190329 23:30:52.613"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${DemoLIST[1]}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.616" level="INFO">2</msg>
+<status status="PASS" starttime="20190329 23:30:52.614" endtime="20190329 23:30:52.616"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>@{DemoLIST}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.625" level="INFO">1</msg>
+<msg timestamp="20190329 23:30:52.625" level="INFO">2</msg>
+<msg timestamp="20190329 23:30:52.626" level="INFO">3</msg>
+<status status="PASS" starttime="20190329 23:30:52.617" endtime="20190329 23:30:52.626"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>4</arg>
+<arg>5</arg>
+<arg>6</arg>
+</arguments>
+<assign>
+<var>@{DemoLIST1}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.628" level="INFO">@{DemoLIST1} = [ 4 | 5 | 6 ]</msg>
+<status status="PASS" starttime="20190329 23:30:52.627" endtime="20190329 23:30:52.628"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${DemoLIST}</arg>
+<arg>${DemoLIST1}</arg>
+</arguments>
+<assign>
+<var>@{DemoLIST2}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.630" level="INFO">@{DemoLIST2} = [ [1, 2, 3] | ['4', '5', '6'] ]</msg>
+<status status="PASS" starttime="20190329 23:30:52.629" endtime="20190329 23:30:52.630"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{DemoLIST2[1]}[1]</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.634" level="INFO">5</msg>
+<status status="PASS" starttime="20190329 23:30:52.631" endtime="20190329 23:30:52.634"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${DemoLIST2[1][1]}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.636" level="INFO">5</msg>
+<status status="PASS" starttime="20190329 23:30:52.635" endtime="20190329 23:30:52.637"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${1}</arg>
+</arguments>
+<assign>
+<var>${No}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.638" level="INFO">${No} = 1</msg>
+<status status="PASS" starttime="20190329 23:30:52.637" endtime="20190329 23:30:52.639"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${No} + 1</arg>
+</arguments>
+<assign>
+<var>${No}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.646" level="INFO">${No} = 2</msg>
+<status status="PASS" starttime="20190329 23:30:52.639" endtime="20190329 23:30:52.646"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${No + 1}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:52.649" level="INFO">3</msg>
+<status status="PASS" starttime="20190329 23:30:52.647" endtime="20190329 23:30:52.649"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${22}</arg>
+</arguments>
+<assign>
+<var>${index7}</var>
+</assign>
+<msg timestamp="20190329 23:30:52.651" level="INFO">${index7} = 22</msg>
+<status status="PASS" starttime="20190329 23:30:52.650" endtime="20190329 23:30:52.652"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${No} &gt; 1</arg>
+<arg>run keywords</arg>
+<arg>Log</arg>
+<arg>MMMM</arg>
+<arg>AND</arg>
+<arg>Should be equal</arg>
+<arg>${1}</arg>
+<arg>${1}</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Log</arg>
+<arg>MMMM</arg>
+<arg>AND</arg>
+<arg>Should be equal</arg>
+<arg>${1}</arg>
+<arg>${1}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>MMMM</arg>
+</arguments>
+<msg timestamp="20190329 23:30:56.133" level="INFO">MMMM</msg>
+<status status="PASS" starttime="20190329 23:30:56.132" endtime="20190329 23:30:56.133"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${1}</arg>
+<arg>${1}</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:56.134" endtime="20190329 23:30:56.136"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:56.123" endtime="20190329 23:30:56.136"></status>
+</kw>
+<status status="PASS" starttime="20190329 23:30:52.652" endtime="20190329 23:30:56.137"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${No} &gt; 1</arg>
+<arg>SET VARIABLE</arg>
+<arg>VV</arg>
+<arg>ELSE</arg>
+<arg>SET VARIABLE</arg>
+<arg>BB</arg>
+</arguments>
+<assign>
+<var>${DNNO}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>VV</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:56.430" endtime="20190329 23:30:56.437"></status>
+</kw>
+<msg timestamp="20190329 23:30:56.440" level="INFO">${DNNO} = VV</msg>
+<status status="PASS" starttime="20190329 23:30:56.138" endtime="20190329 23:30:56.441"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>'NN'</arg>
+</arguments>
+<assign>
+<var>${DNNO}</var>
+</assign>
+<msg timestamp="20190329 23:30:57.089" level="INFO">${DNNO} = NN</msg>
+<status status="PASS" starttime="20190329 23:30:56.444" endtime="20190329 23:30:57.090"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${No} &gt; 0</arg>
+<arg>SET VARIABLE</arg>
+<arg>RR</arg>
+<arg>ELSE</arg>
+<arg>SET VARIABLE</arg>
+<arg>Z</arg>
+</arguments>
+<assign>
+<var>${DNNO}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>RR</arg>
+</arguments>
+<status status="PASS" starttime="20190329 23:30:57.825" endtime="20190329 23:30:57.832"></status>
+</kw>
+<msg timestamp="20190329 23:30:57.836" level="INFO">${DNNO} = RR</msg>
+<status status="PASS" starttime="20190329 23:30:57.093" endtime="20190329 23:30:57.837"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>${DNNO}</arg>
+<arg>QQ</arg>
+</arguments>
+<assign>
+<var>${DNNO2}</var>
+</assign>
+<msg timestamp="20190329 23:30:58.285" level="INFO">${DNNO2} = RR QQ</msg>
+<status status="PASS" starttime="20190329 23:30:57.839" endtime="20190329 23:30:58.285"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Should be equal</arg>
+<arg>${1}</arg>
+<arg>${2}</arg>
+</arguments>
+<assign>
+<var>@{Status}</var>
+</assign>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${1}</arg>
+<arg>${2}</arg>
+</arguments>
+<msg timestamp="20190329 23:30:58.858" level="FAIL">1 != 2</msg>
+<status status="FAIL" starttime="20190329 23:30:58.856" endtime="20190329 23:30:58.858"></status>
+</kw>
+<msg timestamp="20190329 23:30:58.859" level="FAIL">Cannot set variable '@{Status}': Expected list-like value, got boolean.</msg>
+<status status="FAIL" starttime="20190329 23:30:58.286" endtime="20190329 23:30:58.860"></status>
+</kw>
+<status status="FAIL" starttime="20190329 23:30:52.601" endtime="20190329 23:30:58.860" critical="yes">Cannot set variable '@{Status}': Expected list-like value, got boolean.</status>
+</test>
+<test id="s1-s1-t3" name="Connect To DataBase">
+<kw name="Connect To Database Using Custom Params" library="DatabaseLibrary">
